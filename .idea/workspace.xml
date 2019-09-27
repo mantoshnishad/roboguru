@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd6bc706-04f0-4fa1-bb1d-043132031a39" name="Default Changelist" comment="" />
+    <list default="true" id="bd6bc706-04f0-4fa1-bb1d-043132031a39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuizController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/quiz/answer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/quiz/answer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roboguru (2).sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roboguru.zip" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,9 @@
     <findStrings>
       <find>container</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,7 +131,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1QDeTcxWgn8j05CGLsml8Haz0K6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -174,11 +186,22 @@
       <workItem from="1568905406691" duration="3812000" />
       <workItem from="1569077495760" duration="39000" />
       <workItem from="1569077554941" duration="774000" />
-      <workItem from="1569345168556" duration="31891000" />
+      <workItem from="1569345168556" duration="32784000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

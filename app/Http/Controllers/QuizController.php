@@ -25,7 +25,7 @@ class QuizController extends Controller
     {
         $arr=[];
 
-        for ($i=1;$i<=2;$i++)
+        for ($i=1;$i<=strlen($request);$i++)
         {
             if($request->get($i)=="na"){
                 array_push($arr,"na") ;
