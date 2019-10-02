@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Paper;
+use App\Subject;
 use Illuminate\Http\Request;
 use vendor\project\StatusTest;
 
@@ -12,39 +13,51 @@ class QuizController extends Controller
     {
         $this->middleware('auth');
     }
-    public function index()
+    public function index($id)
     {
-        return view('user.quiz.index');
-    }
-    public function quiz()
-    {
-        $quizzes = Paper::all();
-        return view('user.quiz.quiz', compact('quizzes'));
-    }
-    public function answer( Request $request)
-    {
-        $arr=[];
-
-        for ($i=1;$i<=strlen($request);$i++)
+        if($id==0){
+            return view('user.quiz.index');
+        }
+        else
         {
-            if($request->get($i)=="na"){
+            $papers = Paper::where('subjectType',$id)->get();
+            $subject = Subject::find($id);
+            return view('user.quiz.index', compact('subject','papers'));
+        }
+
+    }
+    public function quiz($id)
+    {
+        $quizzes = Paper::where('subjectType',$id)->get();
+        
+         return view('user.quiz.quiz', compact('quizzes'));
+    }
+    public function answer(Request $request)
+    {  
+        
+        $arr=[]; 
+        $id;
+        for ($i=1;$i<=5;$i++)
+        {
+            $id='myid'.$i;
+            
+             if($request->get(request($id))=="na"){
                 array_push($arr,"na") ;
             }
             else {
-
-
-                $ans = Paper::where('id', $i)->get();
+                $ans = Paper::where('id', request($id))->get();
                 foreach ($ans as $a) {
-                    if ($a->ans == $request->get($i)) {
+                    if ($a->ans == $request->get(request($id))) {
                         array_push($arr, "right");
                     } else {
                         array_push($arr, "wrong");
                     }
                 }
-            }
+            } 
 
 
         }
+        
         return view('user.quiz.answer', compact('arr'));
     }
 }

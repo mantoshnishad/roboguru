@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    @yield('header')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +23,7 @@
 
 
 </head>
-<body>
+<body onload="timeout()">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -45,7 +46,7 @@
                                     <a class="nav-link" href="{{asset('/notes')}}"><i class="fa fa-file-text pr-1" aria-hidden="true"></i>Notes</a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link" href="{{asset('/quiz')}}"><i class="fa fa-pencil-square-o pr-1" aria-hidden="true"></i>Test Service</a>
+                                    <a class="nav-link" href="{{asset('/quiz/1')}}"><i class="fa fa-pencil-square-o pr-1" aria-hidden="true"></i>Test Service</a>
                             </li>
                             <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fa fa-caret-square-o-right pr-1" aria-hidden="true"></i>Course Video</a>

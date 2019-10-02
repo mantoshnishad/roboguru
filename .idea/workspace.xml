@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6bc706-04f0-4fa1-bb1d-043132031a39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuizController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuizController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/quiz/answer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/quiz/answer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboguru (2).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboguru.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/quiz/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/quiz/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/quiz/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/quiz/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +186,10 @@
       <workItem from="1568905406691" duration="3812000" />
       <workItem from="1569077495760" duration="39000" />
       <workItem from="1569077554941" duration="774000" />
-      <workItem from="1569345168556" duration="32784000" />
+      <workItem from="1569345168556" duration="42029000" />
+      <workItem from="1569919849802" duration="1724000" />
+      <workItem from="1569922883890" duration="1865000" />
+      <workItem from="1569925762235" duration="1161000" />
     </task>
     <servers />
   </component>
@@ -198,7 +201,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

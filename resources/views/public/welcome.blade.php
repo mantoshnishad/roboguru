@@ -318,7 +318,7 @@
                                             @else
                                                 <div class="carousel-item">
                                                     @endif
-                                                    <img style="height: 60%;"
+                                                    <img style="height: 100%;"
                                                          src="{{asset('public/storage/'.$c->image)}}"
                                                          class="d-block w-100" alt="...">
 

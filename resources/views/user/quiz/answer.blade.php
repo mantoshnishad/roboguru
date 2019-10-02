@@ -23,6 +23,7 @@
                     @endforeach
 
                 </ul>
+                <a class="btn btn-primary mt-2" href="{{asset('/quiz/1')}}">Another Test</a>
             </div>
             <div class="col-4"></div>
         </div>

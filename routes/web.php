@@ -17,8 +17,8 @@ Route::get('note/{id}','NoteController@show');
 Route::get('notes/{id}','NoteController@note');
 Route::get('project/{id}','ProjectController@project');
 Route::group(['prefix' => 'quiz'], function () {
-    Route::get('/','QuizController@index');
-    Route::get('/quiz','QuizController@quiz');
+    Route::get('/{id}','QuizController@index');
+    Route::get('/quiz/{id}','QuizController@quiz');
     Route::post('/answer','QuizController@answer');
 
 

@@ -1,7 +1,31 @@
 @extends('layouts.app')
+@section('header')
+<script type="text/javascript">
+
+
+    var timeLeft=10*60;
+    function timeout() {
+
+        var minute=Math.floor(timeLeft/60);
+        var second=timeLeft%60;
+        if(timeLeft<=0)
+        {
+            clearTimeout(tm);
+            document.getElementById("myform").submit();
+        }
+        else{
+            document.getElementById("time").innerHTML=minute+":"+second;
+        }
+        timeLeft--;
+        var tm= setTimeout(function () {timeout()
+
+        },1000)
+    }
+</script>
+    @endsection
 @section('content')
     <div class="container-fluid mt-2">
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-3">
 
             </div>
@@ -9,13 +33,15 @@
                 @php
                 $c=1;
                 @endphp
-                @
-                <form action="{{asset('/quiz/answer')}}" method="post">
+                <h1>Test Quiz <div id="time" style="float: right">Time out</div></h1>
+
+                <form action="{{asset('/quiz/answer')}}" method="post" id="myform">
                 @foreach($quizzes as $quiz)
                 <div class="card p-4">
-                    <h5 class="card-title">Questions {{$c}} of 10</h5>
-                    <hr>
-                    <h6 class="card-title"><strong>Question:</strong> {{$quiz->question}}</h6>
+
+
+                <h6 class="card-title"><strong> {{$c}}:- Question:</strong> {{$quiz->question}}</h6>
+                <input type="hidden" name="myid{{$c}}" value="{{$quiz->id}}">
                     <hr>
                     <div class="card-body">
                         <ul class="list-group">
@@ -70,9 +96,10 @@
                         $c++;
                     @endphp
                 @endforeach
-                <div class="text-center">
+                <div class="text-center mt-3">
                     <input type="submit" class="btn btn-primary mr-5"/>
-                    <button type="button" class="btn btn-primary">Skip</button>
+                    
+                    <a class="btn btn-primary" href="{{asset('/quiz/1')}}">Skip</a>
                 </div>
                     @csrf
                 </form>
